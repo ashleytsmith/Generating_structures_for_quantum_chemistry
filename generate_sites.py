@@ -143,7 +143,7 @@ def add_hydrogen(infile, atom):
 
     shift = (
         midpoint - pos[atom]
-    )  # Oxygen atom minus the midpoint, shift 1A in the opposite direction so that the hydrogen ends up on the outer edge of the triagle made by two Si and a H
+    )  # Oxygen atom minus the midpoint, shift 1A in the opposite direction so that the hydrogen ends up on the outer edge of the triagle made by two Si and an O
     shift /= np.linalg.norm(shift)
 
     new_atoms = Atoms("H", positions=[pos[atom] - shift])
