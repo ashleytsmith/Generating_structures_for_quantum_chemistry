@@ -3,7 +3,7 @@
 ## Summary
 
 
-Python module for generating different zeolite structures as the input for quantum chemistry calculations. Generates all possible neighboring acid sites given the first one is already fixed. This gif shows a few of the generated structures with the neighbor distance getting larger and larger.
+Python module for generating different zeolite structures as the input for quantum chemistry calculations. Generates all possible neighbouring acid sites given the first one is already fixed. This gif shows a few of the generated structures with the neighbour distance getting larger and larger.
 
 <p align="center">
 <img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/Neighbours.gif" width="400" alt="movie of some of the genrated structures"> 
@@ -23,7 +23,7 @@ Python module for generating different zeolite structures as the input for quant
   </p>
 
 *	The structure CHA has 36 tetrahedra which means 35 places to put a second Al atom and 35 by 4 ways to add a second site (see the second picture above for an example of a two-site structure).
-*	The module generate_sites.py recursively walks through starting from the first site and categorizes the neighbors into nearest neighbor, next nearest neighbors and so on which are labelled neighbours_0, neighbours_1 in the file structure respectively.
+*	The module generate_sites.py recursively walks through starting from the first site and categorises the neighbours into nearest neighbour, next nearest neighbours and so on which are labelled neighbours_0, neighbours_1 in the file structure respectively.
 
 ## Requirements
 
@@ -44,12 +44,12 @@ conda install -c conda-forge ase
 
 ## Summary of the code
 
-**recursive_neighbours()**	Walks through the structure starting from the first site and categorizes a given Si/Al atom in terms of how many neighbors it is away e.g. nearest neighbors are connected by one oxygen i.e. Site1-O-Site2. Second nearest neighbours are separated by another intermediate tetrahedra i.e. Site1-O-Si-O-Site2 and so on. 
+**recursive_neighbours()**	Walks through the structure starting from the first site and categorises a given Si/Al atom in terms of how many neighbours it is away e.g. nearest neighbours are connected by one oxygen i.e. Site1-O-Site2. Second nearest neighbours are separated by another intermediate tetrahedra i.e. Site1-O-Si-O-Site2 and so on. 
 
-**find_neighbours()**		Finds the nearest neighbors of a given atom and checks 
+**find_neighbours()**		Finds the nearest neighbours of a given atom and checks 
 the expected result is attained.
 
-**expected_neighbours()**	Returns expected number of neighbors for a given atom type.
+**expected_neighbours()**	Returns expected number of neighbours for a given atom type.
 
 **replace_Si_with_Al()**	Replaces a Si atom with Al keeping original the indices intact.
 
@@ -58,11 +58,11 @@ the expected result is attained.
 
 **make_files_by_Si_to_Si_distance()** Make the top layer of folders.
 
-**make_subfolders_for_neighbours()**	Make folders for each silicon each oxygen neighbor. Folders are named with the indices from the input file.
+**make_subfolders_for_neighbours()**	Make folders for each silicon each oxygen neighbour. Folders are named with the indices from the input file.
 
 **change_folder()**	Change the folder and create a folder if the path doesn’t exist already.
 
-**check_for_fails()**   Returns the indices for which an incorrect number of neighbors are found.
+**check_for_fails()**   Returns the indices for which an incorrect number of neighbours are found.
 
 
 **Input parameters and required files**:
