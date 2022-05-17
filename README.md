@@ -3,7 +3,7 @@
 
 
 <p align="center">
-<img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/First_acid_site.png" width="300" alt="first acid site"> <img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/Add_next_nearest_neighbour_site.png" width="300" alt = "illustration of two sites"> 
+<img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/First_acid_site.png" width="400" alt="first acid site"> <img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/Add_next_nearest_neighbour_site.png" width="400" alt = "illustration of two sites"> 
 </p>
 
 
