@@ -58,7 +58,7 @@ the expected result is attained.
 
 **make_files_by_Si_to_Si_distance()** Make the top layer of folders.
 
-**make_subfolders_for_neighbours()**	Make folders for each silicon each oxygen neighbour. Folders are named with the indices from the input file.
+**make_subfolders_for_neighbours()**	Make folders for each silicon and another subfolder for its oxygen neighbours. Folders are named with the indices from the input file.
 
 **change_folder()**	Change the folder and create a folder if the path doesn’t exist already.
 
