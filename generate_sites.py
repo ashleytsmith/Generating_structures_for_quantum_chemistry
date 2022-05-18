@@ -176,7 +176,7 @@ def add_hydrogen(infile, atom):
 def make_files_by_Si_to_Si_distance(neighbours_by_Si_to_Si_distance):
 
     '''
-    Makes the top layer of folders according to neighbour number realative to a given site.
+    Makes the top layer of folders according to neighbour number relative to a given site.
     '''
 
     folder_name = output_folder
@@ -232,7 +232,7 @@ def change_folder(
 
 
 def check_for_fails():  
-    
+
     '''
     Returns the indices for which an incorrect number of neighbours are found.
     '''
