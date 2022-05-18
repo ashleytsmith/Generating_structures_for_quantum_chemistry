@@ -53,10 +53,10 @@ the expected result is attained.
 
 **replace_Si_with_Al()**	Replaces a Si atom with Al keeping original the indices intact.
 
-**add_hydrogen()** Adds the hydrogen on the outer edge of the triangle made by two Si and an oxygen.
+**add_hydrogen()** Adds the hydrogen on the outer edge of the triangle made by two Si/Al stoms and an oxygen.
 
 
-**make_files_by_Si_to_Si_distance()** Make the top layer of folders.
+**make_files_by_Si_to_Si_distance()** Makes the top layer of folders according to neighbour number relative to a given site.
 
 **make_subfolders_for_neighbours()**	Make folders for each silicon and another subfolder for its oxygen neighbours. Folders are named with the indices from the input file.
 
