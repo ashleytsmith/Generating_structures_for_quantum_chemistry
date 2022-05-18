@@ -9,7 +9,12 @@ import math
 import numpy as np
 
 
-def recursive_neighbours():  # returns the minimum distance of all Si/Al atoms in the structure relative to a given Si/Al atom
+def recursive_neighbours():  
+
+    '''
+    Returns the minimum distance of all Si/Al atoms in the structure
+    relative to a given Si/Al atom.
+    '''
 
     old_neighbours, positions, symbols = find_neighbours(
         input_structure, Al_of_the_first_acid_site, silicon_expected_neighbours
@@ -54,7 +59,11 @@ def recursive_neighbours():  # returns the minimum distance of all Si/Al atoms i
     return neighbours_by_Si_to_Si_distance
 
 
-def find_neighbours(infile, atom, expected):  # return the neighbours of a given atom
+def find_neighbours(infile, atom, expected):  
+
+    '''
+    Returns the nearest neighbours of a given atom.
+    '''
 
     atoms = read(infile)
     pos = atoms.get_positions()
@@ -97,6 +106,10 @@ def find_neighbours(infile, atom, expected):  # return the neighbours of a given
 
 def expected_neighbours(symbol):
 
+    '''
+    Returns expected number of neighbours for a given atom type.
+    '''
+
     if symbol == "Si" or symbol == "Al":
 
         x = silicon_expected_neighbours
@@ -113,6 +126,10 @@ def expected_neighbours(symbol):
 
 
 def replace_Si_with_Al(infile, Si):
+
+    '''
+    Replaces a Si atom with Al keeping original the indices intact.
+    '''
 
     atoms = read(infile)
     pos = atoms.get_positions()
@@ -131,6 +148,10 @@ def replace_Si_with_Al(infile, Si):
 
 
 def add_hydrogen(infile, atom):
+
+    '''
+    Adds the hydrogen on the outer edge of the triangle made by two Si/Al stoms and an oxygen.
+    '''
 
     atoms = read(infile)
     pos = atoms.get_positions()
@@ -154,6 +175,10 @@ def add_hydrogen(infile, atom):
 
 def make_files_by_Si_to_Si_distance(neighbours_by_Si_to_Si_distance):
 
+    '''
+    Makes the top layer of folders according to neighbour number realative to a given site.
+    '''
+
     folder_name = output_folder
     change_folder(folder_name)
 
@@ -166,6 +191,11 @@ def make_files_by_Si_to_Si_distance(neighbours_by_Si_to_Si_distance):
 
 
 def make_subfolders_for_neighbours(sites):
+
+    '''
+    Make folders for each silicon and another subfolder for its oxygen neighbours. 
+    Folders are named with the indices from the input file.
+    '''
 
     for silicons in sites:
 
@@ -188,7 +218,11 @@ def make_subfolders_for_neighbours(sites):
 
 def change_folder(
     folder_name,
-):  # change the folder and create a folder if the path doesnt exist already
+):  
+
+    '''
+    Change the folder and create a folder if the path doesnt exist already.
+    '''
 
     if not os.path.isdir(folder_name):
 
@@ -197,7 +231,11 @@ def change_folder(
     os.chdir(folder_name)
 
 
-def check_for_fails():  # returns the indices for which an incorrect number of neoghbours are found
+def check_for_fails():  
+    
+    '''
+    Returns the indices for which an incorrect number of neighbours are found.
+    '''
 
     atoms = read(input_structure)
 
