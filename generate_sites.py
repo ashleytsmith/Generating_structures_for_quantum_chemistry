@@ -99,6 +99,9 @@ def find_neighbours(infile, atom, expected):
             + " neighbours expected but "
             + str(len(neighbours))
             + " neighbours found "
+            + " for atom with index "
+            + str(atom)
+            
         )
 
     return neighbours, positions, symbols
@@ -281,9 +284,7 @@ output_folder = "Generated_structures"
 # acid site information
 
 number_of_atoms_in_structure = 108
-oxygen_of_the_first_acid_site = (
-    107  # information about the first acid site that we find the neighbours of
-)
+oxygen_of_the_first_acid_site = 107  # information about the first acid site that we find the neighbours of
 Al_of_the_first_acid_site = 7
 hydrogen_acid_site = 108  # extra parameter for when there is a proton on the first site
 
