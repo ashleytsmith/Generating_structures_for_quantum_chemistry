@@ -6,7 +6,7 @@
 Python module for generating different zeolite structures as the input for quantum chemistry calculations. Generates all possible neighbouring acid sites given the first one is already fixed. This gif shows a few of the generated structures with the neighbour distance getting larger and larger.
 
 <p align="center">
-<img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/Neighbours.gif" width="400" alt="movie of some of the genrated structures"> 
+<img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/CHA_neighbours.gif" width="400" alt="movie of some of the generated structures"> 
 </p>
 
 ## Background chemistry
@@ -78,5 +78,13 @@ silicon_expected_neighbours = 4<br>
 oxygen_expected_neighbours = 2<br>
 hydrogen_expected_neighbours = 1<br>
 
+## Extensions and ideas for improvements
 
+The module also works well on other frameworks such as MFI and BEA (a snapshot of the output for MFI is shown below).
+
+<p align="center">
+<img src="https://github.com/ashleytsmith/Generating_structures_for_quantum_chemistry/blob/main/Images_for_GitHub/MFI_neighbours.gif" width="400" alt="movie of some of the generated structures"> 
+</p>
+
+The recursive_neighbours() and find_neighbours() functions could perhaps be adapted to different chemical systems like clusters or atoms or surfaces without too much extra work.
 
