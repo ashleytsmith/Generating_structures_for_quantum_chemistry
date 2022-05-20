@@ -153,7 +153,7 @@ def replace_Si_with_Al(infile, Si):
 def add_hydrogen(infile, atom):
 
     '''
-    Adds the hydrogen on the outer edge of the triangle made by two Si/Al stoms and an oxygen.
+    Adds the hydrogen on the outer edge of the triangle made by two Si/Al atoms and an oxygen.
     '''
 
     atoms = read(infile)
